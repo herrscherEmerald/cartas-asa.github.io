@@ -47,11 +47,11 @@ header {
 	color: #747373;
 }
 .content-area {
-	width: 100%;
+	width:2000px;
 	position: relative;
 	top: 450px;
 	background: #ebebeb;
-	height: 5500px;
+	height: 5000px;
 }
 .content-area h2 {
 	font-family: poppins;
@@ -64,4 +64,33 @@ header {
 	padding: 2% 0px;
 	font-family: poppins;
 	line-height: 30px;
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 50px;
+        padding: 0 10px;
+    }
+    .logo a {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .banner-area {
+        height: 200px;
+        top: 50px;
+    }
+    .banner-area h2 {
+        font-size: 32px;
+        padding: 10px;
+    }
+    .content-area {
+        top: 250px;
+    }
+    .content-area p {
+        font-size: 14px;
+        padding: 5% 0;
+    }
+    .content-area h2 {
+        font-size: 24px;
+    }
 }
