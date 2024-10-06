@@ -1,106 +1,122 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 body {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px; /* Base font size, adjust as needed */
+	text-align: center;
+	font-family: poppins, sans-serif;
 }
 .wrapper {
-    width: 90%;
-    max-width: 1170px;
-    margin: 0 auto;
+	width: 90%;
+	max-width: 1170px;
+	margin: 0 auto;
 }
 header {
-    height: 80px;
-    background: #262626;
-    width: 100%;
-    z-index: 10;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+	height: 100px;
+	background: #262626;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
 .logo {
-    line-height: 80px;
+	width: 50%;
+	float: left;
+	line-height: 100px;
 }
 .logo a {
-    text-decoration: none;
-    font-size: 24px;
-    color: #fff;
-    letter-spacing: 2px;
+	text-decoration: none;
+	font-size: 24px;
+	color: #fff;
+	letter-spacing: 2px;
 }
 
 .banner-area {
-    width: 100%;
-    height: 300px;
-    position: relative;
-    top: 80px;
-    background-image: url(https://i.pinimg.com/originals/f4/c6/4e/f4c64ec47c2ee48b3edb65e590a8d2c9.jpg);
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	width: 100%;
+	height: 500px;
+	position: fixed;
+	top: 100px;
+	background-image: url(https://i.pinimg.com/originals/f4/c6/4e/f4c64ec47c2ee48b3edb65e590a8d2c9.jpg);
+	background-size:auto;
+	background-position: center center;
 }
-
 .banner-area h2 {
-    font-size: 50px;
-    text-transform: uppercase;
-    color: #747373;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
+	padding-top: 8%;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #747373;
 }
-
 .content-area {
-    width: 100%;
-    position: relative;
-    top: 400px;
-    background: #ebebeb;
-    padding: 40px 20px;
+	width: 100%;
+	position: relative;
+	top: 450px;
+	background: #ebebeb;
+	padding: 30px 0;
 }
-
 .content-area h2 {
-    font-size: 2rem; /* Relative to the base font size */
-    letter-spacing: 0.25rem; /* Adjust for responsive spacing */
-    margin: 20px 0;
+	letter-spacing: 4px;
+	font-size: 30px;
+	margin: 0;
 }
-
 .content-area p {
-    padding: 2% 0;
-    line-height: 1.6;
-    font-size: 1rem; /* Base font size for paragraphs */
+	padding: 2% 0;
+	line-height: 1.5;
 }
 
-@media (max-width: 500px) {
-    header {
-        height: 50px;
-        padding: 0 10px;
-    }
-    .logo a {
-        font-size: 18px;
-        letter-spacing: 1px;
-    }
-    .banner-area {
-        height: 200px;
-        top: 50px;
-    }
-    .banner-area h2 {
-        font-size: 32px;
-        padding: 10px;
-    }
-    .content-area {
-        top: 250px;
-    }
-    .content-area p {
-        font-size: 14px;
-        padding: 5% 0;
-    }
-    .content-area h2 {
-        font-size: 24px;
-    }
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+	header {
+		height: 80px;
+	}
+	.logo {
+		width: 70%;
+		line-height: 80px;
+	}
+	.logo a {
+		font-size: 20px;
+	}
+	.banner-area {
+		height: 300px;
+		top: 80px;
+	}
+	.banner-area h2 {
+		font-size: 28px;
+		padding-top: 15%;
+	}
+	.content-area {
+		top: 350px;
+		padding: 20px 0;
+	}
+	.content-area h2 {
+		font-size: 24px;
+	}
 }
+
+@media (max-width: 480px) {
+	header {
+		height: 60px;
+	}
+	.logo {
+		width: 80%;
+		line-height: 60px;
+	}
+	.logo a {
+		font-size: 18px;
+	}
+	.banner-area {
+		height: 200px;
+		top: 60px;
+		background-size: cover;
+	}
+	.banner-area h2 {
+		font-size: 22px;
+		padding-top: 20%;
+	}
+	.content-area {
+		top: 260px;
+		padding: 15px 0;
+	}
+	.content-area h2 {
+		font-size: 20px;
+	}
 }
